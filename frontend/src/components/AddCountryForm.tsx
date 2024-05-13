@@ -47,7 +47,7 @@ export default function AddCountryForm() {
   const router = useRouter();
   const [countryData, setCountryData] = useState<NewCountryInput>({
     code: "",
-    continent: { id: 0 }, // Initial continent ID
+    continent: { id: 0 }, 
     emoji: "",
     name: "",
   });
@@ -89,7 +89,7 @@ export default function AddCountryForm() {
       alignItems="flex-end"
       flexDirection={stackDirection === "row" ? "row" : "column"}
     >
-      {/* Name */}
+  
       {stackDirection === "row" ? (
         <HStack pr="10px">
           <FormLabel float="left">Name</FormLabel>
@@ -112,7 +112,6 @@ export default function AddCountryForm() {
         </VStack>
       )}
 
-      {/* Emoji */}
       {stackDirection === "row" ? (
         <HStack pr="10px">
           <FormLabel float="left">Emoji</FormLabel>
@@ -135,7 +134,6 @@ export default function AddCountryForm() {
         </VStack>
       )}
 
-      {/* Code */}
       {stackDirection === "row" ? (
         <HStack pr="10px">
           <FormLabel float="left">Code</FormLabel>
@@ -158,7 +156,6 @@ export default function AddCountryForm() {
         </VStack>
       )}
 
-      {/* Continent */}
       {stackDirection === "row" ? (
         <HStack pr="10px">
           <FormLabel float="left">Continent</FormLabel>
@@ -195,7 +192,6 @@ export default function AddCountryForm() {
         </VStack>
       )}
 
-      {/* Submit button */}
       <Button color="white" bg="#F70668" onClick={insertNewCountry}>
         Add
       </Button>
