@@ -10,7 +10,7 @@ import {
   const createApolloClient = () => {
     if (!apolloClient) {
       apolloClient = new ApolloClient({
-        uri: "/api",
+        uri: "http://localhost:4000/api",
         cache: new InMemoryCache(),
       });
     }
